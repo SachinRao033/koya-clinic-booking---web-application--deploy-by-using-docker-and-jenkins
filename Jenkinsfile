@@ -84,7 +84,16 @@ EOF
         stage('Deploy Application') {
             steps {
                 sh '''
+                    echo "Stopping previous Koya Clinic container..."
+
+                    docker rm -f koya-clinic-app koya-clinic-app-1 || true
+
+                    echo "Deploying application..."
+
                     docker compose up -d
+
+                    echo "Deployment completed."
+                    docker compose ps
                 '''
             }
         }
