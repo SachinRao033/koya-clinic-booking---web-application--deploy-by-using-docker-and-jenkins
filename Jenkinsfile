@@ -74,6 +74,7 @@ EOF
                 ]) {
                     sh '''
                         docker compose down
+                        docker system prune -a --volumes --force
                         docker compose build --no-cache
                     '''
                 }
