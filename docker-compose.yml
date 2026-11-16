@@ -2,7 +2,7 @@
 services:
 
   koya-clinic:
-    container_name: koya-clinic-app
+    container_name: koya-clinic-app-1
 
     build:
       context: .
