@@ -1,6 +1,4 @@
-
 services:
-
   koya-clinic:
     container_name: koya-clinic-app-1
 
@@ -38,4 +36,5 @@ services:
 
 volumes:
   clinic_data:
+    external: true
     name: koya_clinic_data
