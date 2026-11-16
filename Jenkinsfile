@@ -3,7 +3,7 @@ pipeline {
     agent any
 
     environment {
-        APP_NAME = "koya-clinic-app"
+        APP_NAME = "koya-clinic-apps"
         APP_PORT = "8000"
     }
 
